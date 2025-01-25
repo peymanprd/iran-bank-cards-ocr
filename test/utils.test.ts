@@ -3,7 +3,7 @@ import { banks } from '../src/banks';
 
 describe('Bank Card Reader Utilities', () => {
   test('validateCardNumber should return true for valid card numbers', () => {
-    const validCardNumber = '6037991234567890'; // Valid card number
+    const validCardNumber = '6274129005473742'; // Valid card number
     expect(validateCardNumber(validCardNumber)).toBe(true);
   });
 
