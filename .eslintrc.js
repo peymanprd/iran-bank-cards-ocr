@@ -10,5 +10,6 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'error',
+    '@typescript-eslint/ban-ts-comment': 'warn',
   },
 };
