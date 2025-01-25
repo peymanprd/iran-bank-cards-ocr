@@ -2,9 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://badge.fury.io/js/iran-bank-cards-ocr.svg)](https://www.npmjs.com/package/iran-bank-cards-ocr)
-[![GitHub stars](https://img.shields.io/github/stars/your-username/iran-bank-cards-ocr.svg)](https://github.com/your-username/iran-bank-cards-ocr/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/your-username/iran-bank-cards-ocr.svg)](https://github.com/peymanprd/iran-bank-cards-ocr/stargazers)
 
-A TypeScript library to detect Iranian bank names, logos, and validate card numbers using OCR (Tesseract.js) and the Luhn algorithm.
+A library to detect Iranian bank names, logos, and validate card numbers using OCR (Tesseract.js) and the Luhn algorithm.
 
 ## Features
 
@@ -31,10 +31,10 @@ yarn add iran-bank-cards-ocr
 
 Here's a quick example to get you started:
 
-```typescript
-import readBankCard from 'iran-bank-card-reader';
+```javascript
+import readBankCard from 'iran-bank-cards-ocr';
 
-async function main() {
+async function processBankCard() {
   const { cardNumber, bankInfo } = await readBankCard();
 
   if (cardNumber && bankInfo) {
@@ -47,7 +47,7 @@ async function main() {
   }
 }
 
-main();
+processBankCard();
 ```
 
 ## API
@@ -79,6 +79,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - [Tesseract.js](https://github.com/naptha/tesseract.js) for OCR capabilities.
 - [Luhn Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm) for card number validation.
+- [Pegah Rezai-Rad](https://github.com/zegond) for banks logos.
 
 ---
 
